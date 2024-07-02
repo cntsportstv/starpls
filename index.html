@@ -638,7 +638,7 @@ function eventos() {
                     var x = Math.random().toString(36).substring(7);
 
                     $.ajax({
-                        url: "https://corsproxy.io/?url=https://todopelotatv.live/json/starplus.json?uegnd" + x,
+                        url: "https://corsproxy.io/?url=https://maindota2.co/json/datos.json?" + x,
                         type: "get",
                         success: function (arr) {
                             var content = '';
@@ -648,13 +648,13 @@ function eventos() {
                                 if (url !== "#") {
                                     let nurl =  url.replace("/embed/eventos/?r=", "");
                                     nurl = atob(nurl);
-                                    let wurl = nurl.replace("//futbolplaytvhd.com/eventos.html?r=", "");
-                                    wurl = "//cnteventos.blogspot.com/p/star.html?get=" + wurl;
+                                    let wurl = nurl.replace("//anceprov.best/embed/extension.html?r=", "");
+                                    wurl = "//m90play.blogspot.com/p/extension.html?r=" + wurl;
                                     let furl = btoa(wurl);
                                      console.log(furl);
                                     //console.log('Link está listo: ' + furl);
                                     // Concatenamos link ya tratado
-                                    url = "//cnteventos.blogspot.com/p/m90.html?r=" + furl;
+                                    url = "https://m90play.blogspot.com/p/m90play.html?r=" + furl;
                                 } else {
                                     //console.log('Link no está listo: ' + url);
                                 }
@@ -668,7 +668,7 @@ function eventos() {
                                     hora = '<button type="button" class="btn btn-white me-1 mb-1">HOY | <span class="t">' + status + '</span> hs</button>';
                                 }
                                 //console.log(status);
-                                content += '<div class="col-md-3 col-lg-4 mycard"><div class="no-section no-mt-2"><a href="' + url + '"><div class="card"><img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/' + obj['img'] + '/scale?width=500&aspectRatio=1.78&format=jpeg" class="card-img-top" alt="image" /><div class="card-body">' + hora + '<h3>' + obj['title'] + '</h3><h5 class="card-subtitle">' + obj['league'] + '</h5></div></div></a></div></div>';
+                                content += '<div class="col-md-4 col-lg-4 mycard"><div class="no-section no-mt-2"><a href="' + url + '"><div class="card"><img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/' + obj['img'] + '/scale?width=500&aspectRatio=1.78&format=jpeg" class="card-img-top" alt="image" /><div class="card-body">' + hora + '<h3>' + obj['title'] + '</h3><h5 class="card-subtitle">' + obj['league'] + '</h5></div></div></a></div></div>';
                             }
                             $("#eventos").html(content);
                             guardaHorario();
@@ -683,6 +683,8 @@ function eventos() {
                     eventos();
                 }, 60000);
             </script>
+
+	 
   <div class="row" id="eventos"></div>
   <hr>
   <div class="sharethis-inline-share-buttons"></div>
